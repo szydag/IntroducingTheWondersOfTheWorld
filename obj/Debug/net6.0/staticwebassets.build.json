@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "e6RahgT85S4XOT1x9D3IFqCnYFgxa7FXIiEq3wECojk=",
+  "Hash": "6yK83fuV+/kLvk8yf9Uoaj3gy885YfExcPI8C+ciL7s=",
   "Source": "IntroducingTheWondersOfTheWorld",
   "BasePath": "_content/IntroducingTheWondersOfTheWorld",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "C:\\Users\\szyda\\OneDrive\\Masaüstü\\Donem5\\WebTeknolojileri\\Vize1\\IntroducingTheWondersOfTheWorld\\IntroducingTheWondersOfTheWorld\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\IntroducingTheWondersOfTheWorld.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\szyda\\OneDrive\\Masaüstü\\Donem5\\WebTeknolojileri\\Vize1\\IntroducingTheWondersOfTheWorld\\IntroducingTheWondersOfTheWorld\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\szyda\\OneDrive\\Masaüstü\\Donem5\\WebTeknolojileri\\Vize1\\IntroducingTheWondersOfTheWorld\\IntroducingTheWondersOfTheWorld\\wwwroot\\css\\home.css",
       "SourceId": "IntroducingTheWondersOfTheWorld",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\szyda\\OneDrive\\Masaüstü\\Donem5\\WebTeknolojileri\\Vize1\\IntroducingTheWondersOfTheWorld\\IntroducingTheWondersOfTheWorld\\wwwroot\\",
       "BasePath": "_content/IntroducingTheWondersOfTheWorld",
-      "RelativePath": "css/site.css",
+      "RelativePath": "css/home.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +65,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
+      "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
       "Identity": "C:\\Users\\szyda\\OneDrive\\Masaüstü\\Donem5\\WebTeknolojileri\\Vize1\\IntroducingTheWondersOfTheWorld\\IntroducingTheWondersOfTheWorld\\wwwroot\\favicon.ico",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\szyda\\OneDrive\\Masaüstü\\Donem5\\WebTeknolojileri\\Vize1\\IntroducingTheWondersOfTheWorld\\IntroducingTheWondersOfTheWorld\\wwwroot\\photo\\wanderlustLogo.png",
+      "SourceId": "IntroducingTheWondersOfTheWorld",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\szyda\\OneDrive\\Masaüstü\\Donem5\\WebTeknolojileri\\Vize1\\IntroducingTheWondersOfTheWorld\\IntroducingTheWondersOfTheWorld\\wwwroot\\",
+      "BasePath": "_content/IntroducingTheWondersOfTheWorld",
+      "RelativePath": "photo/wanderlustLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo\\wanderlustLogo.png"
     }
   ]
 }

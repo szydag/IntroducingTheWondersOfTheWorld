@@ -19,6 +19,8 @@
             crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/6a28faa957.js" crossorigin="anonymous"></script>
     <title>Wanderlust</title>
+    <link rel="stylesheet" type="text/css" href="~/css/home.css">
+
 </head>
 
 <body>
@@ -26,7 +28,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <a href="index.html"><img src="logo.png" alt="logo" id="logo"></a>
+                    <a href="index.html"><img src="~/photo/wanderlustLogo.png" alt="logo" id="logo"></a>
                 </div>
                 <div class="col-sm-8">
                     <ul>
@@ -378,7 +380,7 @@
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous">
         </script>
-   
+    <script>
         var like = document.querySelector("#content");
         like.onclick = function (e) {
             if (e.target.classList == "fa-solid fa-heart active") {
