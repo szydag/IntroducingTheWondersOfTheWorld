@@ -1,0 +1,15 @@
+﻿@page
+@model IntroducingTheWondersOfTheWorld.Views.Shared._ErrorModel
+@{
+}
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">An error occurred while processing your request.</h1>
+
+<div class="error">
+    <p>Controller: @ViewData["Controller"]</p>
+    <p>Action: @ViewData["Action"]</p>
+    <p>Message: @ViewData["Message"]</p>
+</div>

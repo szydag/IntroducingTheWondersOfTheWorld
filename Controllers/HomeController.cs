@@ -18,6 +18,12 @@ namespace IntroducingTheWondersOfTheWorld.Controllers
             return View();
         }
 
+        public IActionResult Index1()
+        {
+            TouristAttractionList attractionList = new TouristAttractionList();
+            return View(attractionList);
+        } 
+
         public IActionResult Privacy()
         {
             return View();
