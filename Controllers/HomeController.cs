@@ -6,7 +6,7 @@ namespace IntroducingTheWondersOfTheWorld.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Navbar()
+        public IActionResult Index()
         {
             return View();
         }

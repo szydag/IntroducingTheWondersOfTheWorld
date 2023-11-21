@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Navbar ";
 }
 
 <!doctype html>
@@ -33,151 +33,18 @@
                 <div class="col-sm-8">
                     <ul>
                         <li>
-                            <a href="index.html">Anasayfa</a>
+                            <a href="@Url.Action("Slider", "Home")">Anasayfa</a>
                         </li>
                         <li>
-                            <a href="#content-text">İçerik</a>
+                            <a href="@Url.Action("Content", "Home")">İçerik</a>
                         </li>
                         <li>
-                            <a href="#content">Dünya Harikaları</a>
+                            <a href="@Url.Action("Populer", "Home")">Dünya Harikaları</a>
                         </li>
                         <li>
-                            <a href="#footer">İletişim</a>
+                            <a href="@Url.Action("Footer", "Home")">İletişim</a>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="slider">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://cdn.pixabay.com/photo/2019/02/19/17/34/ocean-4007309_960_720.jpg"
-                                     class="d-block w-100" alt="logo.png">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://cdn.pixabay.com/photo/2016/02/05/14/00/aurora-borealis-1181004_960_720.jpg"
-                                     class="d-block w-100" alt="logo.png">
-                            </div>
-                            <div class="carousel-item ">
-                                <img src="https://cdn.pixabay.com/photo/2016/11/19/14/30/aurora-borealis-1839582_960_720.jpg"
-                                     class="d-block w-100" alt="logo.png">
-                            </div>
-                            <div class="carousel-item ">
-                                <img src="https://cdn.pixabay.com/photo/2017/03/02/16/54/iceland-2111811_960_720.jpg"
-                                     class="d-block w-100" alt="logo.png">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
-                                data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
-                                data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="content-text">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3>Kuzey Işıkları</h3>
-                    <p>
-                        Kuzey ışıkları ya da kutup aurorası, kutup bölgelerinde gökyüzünde görülen, yeryüzünün manyetik
-                        alanı ile Güneş'ten gelen yüklü parçacıkların etkileşimi sonucu ortaya çıkan doğal ışımalardır.
-                        Kuzey enlemlerde bu etki aurora borealis veya kuzey ışıkları olarak adlandırılır. Güney
-                        enlemlerindeki aurora australis (güney kutup ışıkları) oluşumu da benzer özelliklere sahiptir;
-                        ancak Antarktika’da, Güney Amerika’da ve Avustralya’da daha yüksek enlemlerden görülebilir.
-
-                        Bu ışımalar, genellikle geceleri gözlemlenir, ağırlıklı olarak iyonosferde meydana gelir. Bu
-                        olgu yaygın olarak 60 ve 72 derece kuzey ve güney enlemleri arasında görünür, bu da arktik ve
-                        antarktik kutup dairelerinin içine düşer.
-
-                        Aurora borealis'in görünme olasılığı, kuzey manyetik kutbuna yaklaştıkça artar. Manyetik kutbun
-                        yakınlarında oluşan auroralar tam 90 derece; ancak uzaktan kuzey ufkunu yeşilimsi bir
-                        parlaklıkla, bazen de güneş alışılmamış bir yönden doğuyormuş gibi soluk bir kırmızıyla
-                        aydınlatırlar. Aurora borealis sıklıkla gündönümlerinde oluşur.
-
-                        Auroralar bütün yeryüzünden ve diğer gezegenlerde de gözlemlenebilir. Daha uzun süreli karanlık
-                        ve manyetik alan dolayısıyla, kutuplara yakınlaştıkça daha çok görünür olurlar.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3>Dünya Harikaları</h3>
-                    @if (Model != null)
-                    {
-                        @if (Model.Attractions != null)
-                        {
-                            @foreach (var attraction in Model.Attractions)
-                            {
-                                <div class="col-sm-4">
-                                    <div class="card" style="width: 18rem;">
-                                        <div class="cerceve">
-                                            <img src="@attraction.ImageUrl" class="card-img-top" alt="...">
-                                        </div>
-                                        <div class="card-body">
-                                            <strong>
-                                                <h6>@attraction.Name</h6>
-                                            </strong>
-                                            <p class="card-text">
-                                                @attraction.Description
-                                            </p>
-                                            <div class="butonlar">
-                                                <a><i class="fa-solid fa-heart"></i></a>
-                                                <a href="@attraction.MapUrl" target="_blank">
-                                                    <i class="fa-solid fa-earth-americas"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            }
-                        }
-                        else
-                        {
-                            <p>There are no attractions available.</p>
-                        }
-                    }
-                    else
-                    {
-                        <p>Model is null.</p>
-                    }
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <span>Tüm hakları saklıdır ©</span>
-                </div>
-                <div class="col-sm-4">
-                    <a href="https://github.com/szydag" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                    <a href="https://www.linkedin.com/in/%C5%9Faziye-da%C4%9F-18a404223/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
-                </div>
-                <div class="col-sm-4">
-                    <span> Designed by Şaziye DAĞ</span>
                 </div>
             </div>
         </div>
@@ -193,18 +60,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous">
-        </script>
-    <script>
-        var like = document.querySelector("#content");
-        like.onclick = function (e) {
-            if (e.target.classList == "fa-solid fa-heart active") {
-                e.target.classList.remove("active");
-                e.target.style.color = "#c4a6ef"
-            } else {
-                e.target.classList.add("active");
-                e.target.style.color = "#03001C"
-            }
-        }
     </script>
 
 </body>
