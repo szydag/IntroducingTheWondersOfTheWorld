@@ -18,6 +18,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Home\Home.cshtml.cs" />
+    <Compile Remove="Views\Home\Populer.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\Index.cshtml" />
+    <Content Remove="Views\Home\Index1.cshtml" />
     <Content Remove="Views\Home\Privacy.cshtml" />
     <Content Remove="wwwroot\css\site.css" />
   </ItemGroup>

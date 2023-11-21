@@ -6,33 +6,25 @@ namespace IntroducingTheWondersOfTheWorld.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
-        public IActionResult Index()
+        public IActionResult Navbar()
         {
             return View();
         }
-
-        public IActionResult Index1()
-        {
-            TouristAttractionList attractionList = new TouristAttractionList();
-            return View(attractionList);
-        } 
-
-        public IActionResult Privacy()
+        public IActionResult Slider()
         {
             return View();
         }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Content()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
+        }
+        public IActionResult Populer()
+        {
+            return View();
+        }
+        public IActionResult Footer()
+        {
+            return View();
         }
     }
 }
